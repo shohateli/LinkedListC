@@ -1,37 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
 #include "functions.h"
-#include "short.c"
 
 int main()
 {
-    // List of funcs:
-    //void printFromSmallToBig();                 v
-    // int get_len_of_list(struct link list);         v
-    // void print_list(struct link *list);                     v
-    // void freeList(struct link *list);
-    // struct link *get_last_item(struct link *list);                v
-    // struct link *get_element_before_x(struct link *list, struct link *before);
-    // struct link *create(int data, struct link **list, int *isFirst);         v
-    // struct link *add_new_to_start(struct link **list, int data);
-    // void move_to_start(struct link **list, struct link *dataToMove);
-    // void free_last_item(struct link *list);
-    // struct link *getItemByIndex(struct link *list, int index);
-    // void free_by_index(struct link **list, int index, int *isFirst);
-    // void sortListSmallToBig(struct link *list);
-
-    // struct link *list = NULL;
-    // int isFirst = 1;
-    // struct link *first = create(5, &list, &isFirst);
-    // struct link *second = create(4, &list, &isFirst);
-    // struct link *third = create(3, &list, &isFirst);
-    // struct link *fourth = create(2, &list, &isFirst);
-    // struct link *fifth = create(1, &list, &isFirst);
-    // print_list(list);
-    // sortListSmallToBig(list);
-    // print_list(list);
-    // freeList(list);
     printf("Welcome to the linked list assignment!\n");
     printf("Enter 's' to print 15 user picked numbers in order (short.c): \n");
     printf("Enter 'f' to try out some of the functions yourself: \n");
@@ -45,7 +15,7 @@ int main()
     {
         return 0;
     }
-    if (tolower(letter) == 's' || tolower(letter) == 'f')
+    if (letter == 's' || letter == 'f')
     {
         indicator = 2;
     }
