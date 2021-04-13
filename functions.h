@@ -79,6 +79,14 @@ struct link *get_element_before_x(struct link *list, struct link *before)
     return (currentElement);
 }
 
+struct link *create_skeleton()
+{
+    struct link *placeForNewData = (struct link *)malloc(sizeof(struct link));
+    placeForNewData->data = 0;
+    placeForNewData->next = NULL;
+    return placeForNewData;
+}
+
 struct link *create(int data, struct link **list, int *isFirst)
 {
     if (*isFirst == 1)

@@ -87,6 +87,7 @@ int main()
             printf("Enter 7 to free by index: \n");
             printf("Enter 8 to sort from smallest to biggest: \n");
             printf("Enter 9 to get item by index: \n");
+            printf("Enter 10 to get new empty part: \n");
             printf("Enter 0 to exit: ");
             scanf(" %d", &num);
             printf("\n");
@@ -195,6 +196,12 @@ int main()
                     }
                     printf("\nItem at index %d: %d\n", index, getItemByIndex(list, index)->data);
                 }
+            }
+            else if (num == 10)
+            {
+                struct link *newPlace = create_skeleton();
+                printf("\nNew empty part at place: %d\nData: %d\n\n", newPlace, newPlace->data);
+                free(newPlace);
             }
         }
     }
